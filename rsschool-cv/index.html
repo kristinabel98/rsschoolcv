@@ -4,16 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1".0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rs School CV</title>
     <link rel="stylesheet" href="style.css">
-    
-    <body>
-        <script type="application/javascript">
-            
-            alert("Привет. Подожди, пожалуйста, с проверкой пару дней. Возникли технические неполадки ");                    // выскакивающее окошко
-            console.log("Привет. Подожди, пожалуйста, с проверкой пару дней. Возкникли технические неполадки ");              // в консоль отладчика
-         </script>  
+    <script>
+      document.createElement('figure');
+      document.createElement('figcaption');
+    </script>
+ </head> 
+ <body class="page">
+ <header class="header">
+        <div class="header_nav-menu">
+          <div class="menu_icon">
+            <header class="header page__header">
+              <nav class="nav header__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#professionalSkills" class="nav__link">
+                      Professional Skills
+                    </a>
+                  </li>
+          
+                  <li class="nav__item">
+                    <a href="#codeExample" class="nav__link">
+                      Code Example
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="#education" class="nav__link">
+                      Education
+                    </a>
+                  </li>
+          
+                  <li class="nav__item">
+                    <a href="#languages" class="nav__link">
+                    Languages
+                    </a>
+                  </li>
+          
+                  <li class="nav__item">
+                    <a href="/experience" class="nav__link">
+                      Experience
+                    </a>
+                  </li>
+
+                  <li class ="nav__item">
+                    <a href="#contacts" class="nav__link">
+                      Contacts
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="#projects" class="nav__link">
+                      Projects
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+       </div>
+      </div>
+    </div> 
+ <footer>
         <div class="container">
             <div class="profile">
             <div class="profile_container">
@@ -27,13 +80,13 @@
                 </h1>
                 <p class="profile_title">Junior Front-end Developer</p>
                 <p class="description">
-                    Hi! My name is Krystsina and i`m 25 years old. Here you can see information about myself and my professional skills.
-                </p>
-                <a class="downloadBtn" href="https://rolling-scopes-school.github.io/kristinabel98-JSFE2022Q3/online-zoo/pages/main/index.html">Watch my first project!</a>  
+                  Hello. My name is Kristina(in passport - Krystsina) and I am 25 years old. This CV was created for further employment for the vacancy "Front-end Developer'. Here you can get to know me better.
+                </p>   
             </div>
         </div>
+      <main>
         <div class="group-1">
-            <div class="skills">
+            <section class="skills" id="professionalSkills"> 
                 <h3 class="title">Professional Skills</h3>
                 <ul class="skill_list description">
                     <li>HTML5</li>
@@ -42,56 +95,111 @@
                     <li>Git & GitHub</li>
                     <li>Webpack</li>
                     <li>Visual Studio Code</li>
-                    <li>English level - B1</li>
-                    <li>Softskills</li>
+                    <li>Preprocessors. SASS</li>
+                    <li>Bootstrap</li>
                 </ul>
-            </div>
-            <div class="code_ex">
+            </section>
+          </div>
+            <section class="code_ex" id="codeExample">
                 <h3 class="title_code">Code Example</h3>
-                <pre><code class="solution_code" data-language="javascript">function createSecretHolder(secret) {
-                    return {
-                      getSecret: function() { return secret; },
-                      setSecret: function(v) { secret = v; }
-                    };
-                  }</code></pre>
-                  <h4 class="title_education">Education</h4>
-                  <ul class="education">
-                    <li>2016 - 2021 European Humanities University </li>
-                    <a class="bachelor">Bachelor of International law and EU law</a>
-                    <li>2022 - present "The Rolling Scopes School"</li>
-                    <a class="jsq4">JS/FE Pre-school 2022Q4</a>
-                    <li>2022 - present "The Rolling Scopes School"</li>
-                    <a class="jsq3">JavaScript/Front-End 2022Q3</a>
-                  </ul>
-             <div class="language">
-                <h5 class="languages_item">Languages</h5>
-                <ul  class="lang_list_item">
-                    <li>English - A2-B1</li>
-                    <a class="eng">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta natus, blanditiis earum dolore ex unde, doloribus ratione dignissimos est molestiae corrupti aliquid dolorum eaque laborum iure officia delectus tenetur id.</a>
-                    <li>Russian - Native</li>
-                    <a class="rus">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, impedit. Dolor ea perspiciatis ut saepe inventore beatae corporis delectus et sequi? Ipsa ratione sequi adipisci vero assumenda eos, facilis soluta.</a>
-                    <li>Belarusian - Native</li>
-                    <a class="bel">belarus top</a>
-                    <li>German - A1</li>
-                    <a class="ger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui similique doloremque distinctio dolorum dolore, culpa, natus eius, officia voluptas blanditiis neque suscipit esse rem quas consequuntur animi tempore impedit.</a>
-                    <li>Lithuanian - A1</li>
-                    <a class="lt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, obcaecati iste! Porro amet illum aliquam aliquid, fugiat et ut harum ullam autem voluptate necessitatibus laudantium inventore consectetur iusto non officiis!</a>
-               </ul>
+                <pre><code class="solution_code" data-language="javascript">const iconMenu = document.querySelector('.menu_icon'); 
+
+                  //                   HAMBURGER MENU
+                  if (iconMenu) {
+                    const menuBody = document.querySelector('.nav-menu');
+                  
+                    iconMenu.addEventListener('click', function(e) {
+                        document.body.classList.toggle('_lock');
+                        iconMenu.classList.toggle('_active');
+                        menuBody.classList.toggle('_active');
+                    });
+                    
+                  }
+                  
+                    </code></pre>
+            </section>
+            <section class="education" id="education">
+                  <h1="title_education">Education</h1>
+                  <h1 class="education_it">
+                    <li>2016 - 2021 European Humanities University
+                    <a class="bachelor">Bachelor of International law and EU law</a></li>
+                    <li>2022 - present "The Rolling Scopes School"
+                    <a class="jsq4">JS/FE Pre-school 2022Q4</a></li>
+                    <li>2022 - present "The Rolling Scopes School"
+                    <a class="jsq3">JavaScript/Front-End 2022Q3</a></li>
+                  </h1>
+            </section>
+                  <section class="language_skills" id="languages">
+                    <h3 class="title">Languages</h3>
+                    <h1 class="lang_list description">
+                        <li>English - B1</li>
+                        <li>Russian - Native</li>
+                        <li>Belarusian - Native</li>
+                        <li>German - A1</li>
+                        <li>Lithuanian - A1</li> 
+                    </h1>
+                </section>
+              </section>
         <div class="group-2">
-            <div class="exp">
-                <h3 class="title">Experience</h3>
+            <section class="exp" id="experience">
+                <section class="title">Experience
                 <div class="exp_item">
                     <p class="item_preTitle">2018 - 2020</p>
                     <h4 class="item_title">Limited Liability Company "Astotrading</h4>
                     <p class="item_subtitle">Gas Station Operator</p>
-                    <p class="description">
+                    <h3 class="description">
                         Responsibilities: display of goods, work with a cash register, work with Microsoft, sale of products.
+                    </h3>
+                    <p class="it_item">2016-2020</p>
+                    <h5 class="it_it_item">manager of Instagram</h5>
+                    <p class="item_freel">
+                      Responsibilities: creating advertisment, targeting, updating profiles on Instagram 
                     </p>
-                </div>
+                  </section>
+                </section>
             </div>
         </div>
-        <div class="group-3"></div>
+        <div class="group-3">
+          <h1 class="title" id="contacts">
+            <section class="title_item_cont">Contacts
+            <div class="cont_item">
+            <li>Github: kristinabel98</li>
+            <li>LinkedIn: Krystsina Fasolia</li>
+            <li>Telegram: +375295285098</li>
+            <li>Instagram: bf.krisya</li>
+            <li>Discord: @Krystsina#7391</li>
+            <p class> If you want to work with me, you can also write me on email: kristinamur98@gmail.com</p>
+          </section>
+            </div>
+          </h1>
+          <div class="title2" id="projects">
+          <section class="title_item_project">Projects
+          <div class="prod_ir">
+          <h1><a  href="../rsschool-cv/index.html">CV project</a></h1>
+          <h2><a href="https://rolling-scopes-school.github.io/kristinabel98-JSFE2022Q3/online-zoo/pages/main/index.html">Online-zoo</a>
+          </h2>
+        </div>
+      </div>
+    </section>
+        <footer class="footer page__footer">
+          <ul class="footer__nav">
+            <li class="footer__link">
+              <a href="https://github.com/kristinabel98?tab=repositories">
+                GitHub
+                <p class="footer__term">2022</p>
+              </a>
+              
+            </li>
+          
+      </main>
+            <li class="footer__link">
+              <a href="https://rs.school/js/">
+                <img src="../img/rs_school_js.svg" alt="RollingScopes" class="rssLogo">
+              </a>
+            </li>
+          </ul>
+        </footer>
+        <script src="../rsschool-cv/script.js"></script>
+      </footer>
     </body>
-    
-</head>
 </html>
